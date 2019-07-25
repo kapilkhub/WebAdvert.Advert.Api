@@ -7,6 +7,8 @@ namespace AdvertApi.Repository.Interfaces
     {
         Task<string> Add(AdvertModel model);
 
-        Task<bool> Confirm(ConfirmAdvertModel model);
+        Task Confirm(ConfirmAdvertModel model);
+
+        Task<bool> CheckHealthAsync();
     }
 }
